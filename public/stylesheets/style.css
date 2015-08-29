@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 { font-size: 40px; color: #0227f7; }
+h3 { font-size: 22px; color: #f4a11a; }
+p  { font-size: 16px; color: #16841c; }
