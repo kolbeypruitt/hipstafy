@@ -2,9 +2,9 @@ extends layout
 
 block content
   h1= title
-  h3 How to be hipsta-licious
+  h3= hLicious
   p= weWill
-      form(action="/foo/bar" method="post")
-      input(type="text" name="level")
-      input(type="text" name="emotion")
-      input(type="submit")
+  form(action="/submitted" method="post")
+    textarea(name:'body', rows:200)
+      `type your regular boring text here`
+    input(type="submit", value='Hipstafy!')

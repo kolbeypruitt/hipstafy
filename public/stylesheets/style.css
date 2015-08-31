@@ -8,5 +8,14 @@ a {
 }
 
 h1 { font-size: 40px; color: #0227f7; }
+
 h3 { font-size: 22px; color: #f4a11a; }
+
 p  { font-size: 16px; color: #16841c; }
+
+form {width: 100px; height: 50px;}
+
+textarea {
+    width: 400px;
+    height: 200px;
+}
