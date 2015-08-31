@@ -1,5 +1,5 @@
-body {
-  padding: 50px;
+
+body { background:#060610 url('dreamcodes/bg_images/color/c28.jpg') no-repeat center top;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -9,10 +9,28 @@ a {
 
 h1 { font-size: 40px; color: #0227f7; }
 
-h3 { font-size: 22px; color: #f4a11a; }
+h3 { font-size: 22px; color: #f4a11a; text-shadow: 0 -1px 1px black; }
 
-p  { font-size: 16px; color: #16841c; }
+p  { font-size: 18px; color: #16841c; text-shadow: 0 -1px 1px black; }
 
-#textBox {width: 450px; height: 200px; }
+#textBox {width: 300px; height: 200px; background-color: #DDDDDD}
 
-#submitBtn {width: 300px; height: 200px; }
+#submitBtn {
+font-size: 30px;
+width: 150px; height: 50px;
+background: #0227F7 url(/images/alert-overlay.png) repeat-x;
+display: inline-block;
+padding: 5px 10px 6px;
+color: #F4A11A;
+text-decoration: none;
+font-weight: bold;
+line-height: 1;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 1px 3px #999;
+-webkit-box-shadow: 0 1px 3px #999;
+text-shadow: 0 -1px 1px #F4A11A;
+border-bottom: 1px solid #F4A11A;
+position: relative;
+cursor: pointer;
+}
