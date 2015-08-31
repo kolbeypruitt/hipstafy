@@ -9,11 +9,10 @@ router.get('/', function(req, res, next) {
     hLicious:"How to be hipsta-licious" });
 });
 
-
-router.post('/submitted', function (req, res, next) {
-  res.render('index', {
-    weWill: "No way! That worked?"
+router.post('/submitted', function(req, res){
+    console.log(req.body);
+    res.render('results', {hipText: req.body.unHipText});
 });
-})
+
 
 module.exports = router;

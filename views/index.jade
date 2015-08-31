@@ -5,6 +5,6 @@ block content
   h3= hLicious
   p= weWill
   form(action="/submitted" method="post")
-    textarea(name:'body', rows:200)
-      `type your regular boring text here`
-    input(type="submit", value='Hipstafy!')
+    input(type="textarea" name="unHipText" id="textBox" label="type your regular boring text here")
+    input(type="submit" id="submitBtn" value='Hipstafy!')
+    
