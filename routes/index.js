@@ -9,9 +9,7 @@ router.get('/', function(req, res, next) {
 
 
 router.post('/foo/bar', function (req, res, next) {
-  if (req.body == {emotion: "happy", level: "very"}) {
-    res.render('index', {title: "No way! That worked?"});
-  }
+  res.render('index', {title: "No way! That worked?"});
 })
 
 module.exports = router;
