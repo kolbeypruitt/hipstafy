@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var snippets = require('./lib/snippets')
+// var snippets = require('./lib/snippets')
 
 var app = express();
 

@@ -1,5 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var snippets = require('../lib/snippets.js');
+
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,9 +16,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/submitted', function(req, res){
-    console.log(req.body);
-    res.render('results', {hipText: req.body.unHipText});
+
+    res.render('results', {hipText: req.body.unHipText + snippets[getRandomInt(1,snippets.floor)]});
 });
+
 
 
 module.exports = router;
