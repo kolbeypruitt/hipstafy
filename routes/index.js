@@ -7,6 +7,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
@@ -16,8 +17,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/submitted', function(req, res){
-
-    res.render('results', {hipText: req.body.unHipText + snippets[getRandomInt(1,snippets.floor)]});
+function hipstafy(text) {
+  var newText = "";
+  var textArr = req.body.unHipText.split(" ");
+  for (var i = 0; i < textArr.length; i++) {
+    var hipWord = snippets[getRandomInt(1,snippets.length)]
+    newText += (" " + textArr[i] + " " + hipWord);
+  }
+  return newText;
+}
+  res.render('results', {hipText: hipstafy(req.body.unHipText)});
 });
 
 
